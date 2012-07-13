@@ -1,0 +1,7 @@
+name = HumanitarianResponse Sectorial Analysis
+description = HumanitarianResponse - Sectorial Analysis
+core = 7.x
+package = Humanitarianresponse
+version = 7.x-1.0
+project = humanitarianresponse_sectorial_analysis
+features[features_api][] = api:1

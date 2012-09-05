@@ -18,6 +18,9 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_cluster',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -53,7 +56,10 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 0,
         ),
@@ -75,95 +81,8 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => '3',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-sectoral_analysis-field_sa_assessment'.
-  $fields['node-sectoral_analysis-field_sa_assessment'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_sa_assessment',
-      'foreign keys' => array(
-        'nid' => array(
-          'columns' => array(
-            'nid' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'nid' => array(
-          0 => 'nid',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'node_reference',
-      'settings' => array(
-        'referenceable_types' => array(
-          'assessment' => 'assessment',
-          'cluster_objectives' => 0,
-          'contact' => 0,
-          'document' => 0,
-          'event' => 0,
-          'highlight' => 0,
-          'humanitarian_profile' => 0,
-          'indicator_data' => 0,
-          'indicator_definition' => 0,
-          'link' => 0,
-          'map' => 0,
-          'media_gallery' => 0,
-          'news' => 0,
-          'page' => 0,
-          'sectoral_analysis' => 0,
-        ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => '',
-          'view_name' => '',
-        ),
-      ),
-      'translatable' => '0',
-      'type' => 'node_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'sectoral_analysis',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'node_reference',
-          'settings' => array(),
-          'type' => 'node_reference_default',
-          'weight' => 9,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_sa_assessment',
-      'label' => 'Planned Assessment',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
         'type' => 'options_select',
-        'weight' => '12',
+        'weight' => '2',
       ),
     ),
   );
@@ -204,7 +123,10 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 6,
         ),
@@ -230,7 +152,7 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '9',
+        'weight' => '8',
       ),
     ),
   );
@@ -271,7 +193,10 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 5,
         ),
@@ -297,7 +222,7 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '8',
+        'weight' => '7',
       ),
     ),
   );
@@ -338,7 +263,10 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 4,
         ),
@@ -364,7 +292,7 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '7',
+        'weight' => '6',
       ),
     ),
   );
@@ -405,7 +333,10 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 3,
         ),
@@ -431,7 +362,7 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '6',
+        'weight' => '5',
       ),
     ),
   );
@@ -472,7 +403,10 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 7,
         ),
@@ -498,7 +432,7 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '10',
+        'weight' => '11',
       ),
     ),
   );
@@ -539,7 +473,10 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 8,
         ),
@@ -565,7 +502,7 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '11',
+        'weight' => '12',
       ),
     ),
   );
@@ -606,7 +543,10 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 1,
         ),
@@ -632,7 +572,7 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '4',
+        'weight' => '3',
       ),
     ),
   );
@@ -673,7 +613,10 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 2,
         ),
@@ -699,7 +642,7 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '5',
+        'weight' => '4',
       ),
     ),
   );
@@ -712,7 +655,6 @@ function humanitarianresponse_sec_analysis_field_default_fields() {
   t('Drivers and Causes of Needs');
   t('Drivers and Causes: Information Gaps');
   t('Most Likely Scenario');
-  t('Planned Assessment');
   t('Priority Needs');
   t('Scope and Impact of the Crisis');
   t('Scope and Impact: Information Gaps');

@@ -90,6 +90,29 @@ function humanitarianresponse_sec_analysis_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__sectoral_analysis';
+  $strongarm->value = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '13',
+        ),
+        'workflow' => array(
+          'weight' => '10',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_node__sectoral_analysis'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_sectoral_analysis';
   $strongarm->value = array(
     0 => 'main-menu',
@@ -126,13 +149,6 @@ function humanitarianresponse_sec_analysis_strongarm() {
   $strongarm->name = 'node_submitted_sectoral_analysis';
   $strongarm->value = 1;
   $export['node_submitted_sectoral_analysis'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'show_diff_inline_sectoral_analysis';
-  $strongarm->value = 1;
-  $export['show_diff_inline_sectoral_analysis'] = $strongarm;
 
   return $export;
 }

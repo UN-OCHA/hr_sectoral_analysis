@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the humanitarianresponse_sec_analysis feature.
- */
-
-include_once 'humanitarianresponse_sec_analysis.features.inc';

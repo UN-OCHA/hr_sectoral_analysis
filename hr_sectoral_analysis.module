@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the hr_sectoral_analysis feature.
+ */
+
+include_once 'hr_sectoral_analysis.features.inc';

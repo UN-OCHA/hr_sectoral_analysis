@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * humanitarianresponse_sec_analysis.features.field.inc
+ * hr_sectoral_analysis.features.field.inc
  */
 
 /**
  * Implements hook_field_default_fields().
  */
-function humanitarianresponse_sec_analysis_field_default_fields() {
+function hr_sectoral_analysis_field_default_fields() {
   $fields = array();
 
   // Exported field: 'node-sectoral_analysis-field_cluster'.

@@ -19,14 +19,7 @@ features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:1
 features[field][] = node-sectoral_analysis-field_cluster
-features[field][] = node-sectoral_analysis-field_sa_cg_gaps
-features[field][] = node-sectoral_analysis-field_sa_cg_response
-features[field][] = node-sectoral_analysis-field_sa_dc_gaps
-features[field][] = node-sectoral_analysis-field_sa_dc_needs
-features[field][] = node-sectoral_analysis-field_sa_pri_needs
-features[field][] = node-sectoral_analysis-field_sa_scenario
-features[field][] = node-sectoral_analysis-field_sa_si_crisis
-features[field][] = node-sectoral_analysis-field_sa_si_gaps
+features[field][] = node-sectoral_analysis-field_sectoral_analysis
 features[node][] = sectoral_analysis
 features[variable][] = auto_entitylabel_node_sectoral_analysis
 features[variable][] = auto_entitylabel_pattern_node_sectoral_analysis
@@ -48,5 +41,3 @@ features[variable][] = node_submitted_sectoral_analysis
 l10n path = http://localize.humanitarianresponse.info/sites/localize.humanitarianresponse.info/files/l10n_packager/%core/%project/%project-%release.%language.po
 l10n server = localize.humanitarianresponse.info
 l10n url = http://localize.humanitarianresponse.info/sites/localize.humanitarianresponse.info/files/l10n_packager/l10n_server.xml
-
-

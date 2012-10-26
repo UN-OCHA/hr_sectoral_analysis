@@ -99,10 +99,10 @@ function hr_sectoral_analysis_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '13',
+          'weight' => '6',
         ),
         'workflow' => array(
-          'weight' => '10',
+          'weight' => '5',
         ),
       ),
       'display' => array(),

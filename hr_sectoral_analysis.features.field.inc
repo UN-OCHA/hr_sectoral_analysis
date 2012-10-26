@@ -173,7 +173,7 @@ function hr_sectoral_analysis_field_default_fields() {
             ),
           ),
         ),
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(

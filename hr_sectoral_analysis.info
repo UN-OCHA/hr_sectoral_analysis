@@ -33,6 +33,7 @@ features[variable][] = comment_preview_sectoral_analysis
 features[variable][] = comment_sectoral_analysis
 features[variable][] = comment_subject_field_sectoral_analysis
 features[variable][] = field_bundle_settings_node__sectoral_analysis
+features[variable][] = language_content_type_sectoral_analysis
 features[variable][] = menu_options_sectoral_analysis
 features[variable][] = menu_parent_sectoral_analysis
 features[variable][] = node_options_sectoral_analysis

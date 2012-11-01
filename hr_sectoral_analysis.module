@@ -5,3 +5,17 @@
  */
 
 include_once 'hr_sectoral_analysis.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function hr_sectoral_analysis_form_sectoral_analysis_node_form_alter(&$form, &$form_state, $form_id) {
+  
+  // Help link
+  $help_link = theme('advanced_help_topic', array(
+    'module' => 'hr_sectoral_analysis',
+    'topic' => 'guidance',
+  ));
+  $form['field_sectoral_analysis']['#prefix'] = $help_link . '&nbsp;' . t('Sectoral Analysis Guidance');
+
+}

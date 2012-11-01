@@ -3,6 +3,7 @@ description = HumanitarianResponse - Sectoral Analysis
 core = 7.x
 package = Humanitarianresponse
 php = 5.2.4
+dependencies[] = advanced_help
 dependencies[] = auto_entitylabel
 dependencies[] = autosave
 dependencies[] = ctools

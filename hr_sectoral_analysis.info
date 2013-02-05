@@ -15,6 +15,7 @@ dependencies[] = node_reference
 dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = taxonomy
+dependencies[] = text
 datestamp = 1342528265
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0

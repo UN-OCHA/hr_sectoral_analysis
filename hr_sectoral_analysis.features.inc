@@ -37,5 +37,4 @@ function hr_sectoral_analysis_node_info() {
   );
   return $items;
 }
-;
-}
+
